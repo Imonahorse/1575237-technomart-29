@@ -1,0 +1,548 @@
+/* Кастомные свойства */
+:root {
+  --basic-light-black:#161D29;
+  --basic-dark-gray:#C5C5C5;
+  --basic-grey-white:#F3F7F9;
+  --basic-light-grey:#F1F5F7;
+  --basic-silver:#F4F7F9;
+  --basic-light-gray:#EAEAEA;
+  --basic-dark-blue:#293449;
+  --basic-blue:#32425C;
+  --basic-grey:#888888;
+  --basic-red:#EE3643;
+  --basic-brown:#F9F5F0;
+  --basic-black:#000000;
+  --basic-white:#ffffff;
+  --basic-yellow:#FFBF47;
+  --basic-light-green:#5FBB2D;
+  --basic-green:#8ED78F;
+  --basic-dark-green:#63A63E;
+  --basic-gold:#FFD180;
+  --special-yellow:#FFC047;
+  --special-blue:#3BBCE3;
+  --special-violet:#DC91D8;
+  --special-gold:#FFDA96;
+  --special-light-grey:#A9A9A9;
+  --special-light-blue:#32425C;
+  --special-dark-blue:#1D2739;
+  --basic-light-white: rgba(0, 0, 0, 0.0001)
+}
+
+.page-body {
+  min-width: 940px;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Cuprum, Ariel, sans-serif;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.page a {
+  text-decoration: none;
+}
+
+/*HEADER*/
+
+.main-header {
+  background-color: var(--basic-silver) ;
+}
+
+.header-menu {
+  background-color: var(--basic-dark-blue);
+}
+
+.header-logo {
+  background: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.header-bookmark {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.header-order {
+  list-style: none;
+}
+
+.basket-link{
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.order-link {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background-color: var(--basic-dark-green);
+}
+
+.order-link:hover {
+  background-color: var(--basic-light-green);
+}
+
+.order-link:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: var(--basic-dark-green);
+}
+
+
+.header-description {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color:var(--basic-red);
+}
+
+.header-phone {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--basic-red);
+  border: 3px solid var(--basic-white);
+  box-sizing: border-box;
+}
+
+.header-adress {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--basic-blue)
+}
+
+.user li {
+  list-style: none;
+  background: rgba(0, 0, 0, 0.0001);
+}
+.user a {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-black);
+}
+
+.user a:hover {
+  color: var(--basic-red);
+}
+.user a:active {
+  color:var(--basic-dark-gray);
+}
+
+
+.main-navigation {
+  background-color: var(--special-light-blue);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a{
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.site-navigation li:hover {
+  background-color: var(--basic-dark-blue);
+}
+
+.site-navigation li:active {
+  background-color: var(--special-dark-blue);
+}
+
+
+
+
+/*MAIN*/
+
+/*6 КАРТИНОК С КНОПКАМИ И СЛАЙДЕР*/
+
+.offer-list {
+  list-style: none;
+}
+
+.offer-headline {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--basic-white);
+}
+
+.offer-link {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.offer-link:hover {
+  background-color:  rgba(77, 77, 77, 0.3);
+}
+
+.offer-link:active {
+  background-color:  rgba(66, 66, 66, 0.3);;
+}
+
+.basket-link:active, .header-bookmark:active {
+  background-color: var(--basic-light-black);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+.offer-headline-slider {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--basic-white);
+  list-style: none;
+}
+
+.offer-prescription-slider {
+  font-size: 18px;
+  line-height: 24px;
+  color:var(--basic-white);
+}
+
+.offer-link-slider {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.slider-photo {
+  background-color:var(--basic-white)
+}
+
+.offer-slider-item{
+  list-style-type: none;
+}
+
+
+.offer-item-materials {
+  background-color: var(--basic-yellow);
+}
+.offer-item-tools {
+  background-color: var(--special-blue);
+}
+.offer-item-technics{
+  background-color: var(--special-violet);
+}
+.offer-item-technics{
+  background-color: var(--special-violet);
+}
+
+.offer-item-discounts{
+  background-color: var(--basic-green);
+}
+.offer-item-delivery {
+  background-color: var(--basic-yellow);
+}
+
+/*ПОПУЛЯРНЫЕ ПРЕДЛОЖЕНИЯ И БРЕНДЫ*/
+
+.bestsellers-headline, .brands-headline{
+  background-color: var(--basic-brown);
+}
+
+.popular {
+  font-size: 30px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+  color:var(--basic-blue) ;
+  background-color: var(--basic-brown);
+}
+
+.popular-link{
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.bestsellers-list, .brands-list {
+  list-style: none;
+}
+
+.card {
+  border: 1px solid var(--basic-light-gray);
+  background-color: var(--basic-white);
+}
+
+.card-name {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  color: var(--basic-black);
+}
+
+.old-price {
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  color: var(--special-light-grey);
+}
+
+.new-price {
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+
+.brands-item {
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-light-gray);
+}
+
+/*СЕРВИСЫ*/
+
+.services {
+  background-color: var(--basic-light-grey) ;
+}
+
+.services-list, .services-slider-list {
+  list-style: none;
+}
+
+.services-headline {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.services-tagline {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  color: var(--basic-black);
+}
+
+.services-slider-button {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  align-items: center;
+  color: var(--basic-white);
+  background-color: var(--special-light-blue);
+}
+
+.services-slider-select {
+  font-size: 21px;
+  line-height: 30px;
+  align-items: center;
+  font-weight: bold;
+  color: var(--basic-blue);
+  background-color: var(--basic-white);
+  box-shadow: 0px 1px 0px var(--basic-light-white);
+}
+
+.services-slider-headline {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--special-light-blue);
+}
+
+.services-slider-description {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  color: var(--basic-black);
+}
+
+.services-request {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+/*COMPANY*/
+
+.company-headline {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.company-delivery, .company-prescription {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  color: var(--basic-black);
+}
+
+.company-delivery-list{
+  list-style: none;
+}
+
+.company-delivery-item {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.company-info {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+/*CONTACS*/
+
+.contacs-headline {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+.contacs-prescription {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  color:var(--basic-black)
+}
+.map {
+  background: var(--basic-light-white);
+}
+.map-help {
+  font-size: 14px;
+  line-height: 18px;
+    text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+/*FOOTER*/
+
+.main-footer {
+  background-color: var(--basic-blue);
+}
+
+.footer-menu {
+  background-color: var(--basic-blue);
+}
+
+.footer-logo {
+  background: var(--basic-red);
+box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.footer-navigation-list {
+  list-style: none;
+}
+
+.footer-navigation-item a {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-light-grey);
+}
+
+.footer-navigation-item a:hover, .footer-second-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation-item a:active, .footer-second-item a:active{
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+
+.footer-second-menu {
+  background-color: var(--basic-blue);
+}
+
+.footer-adress, .footer-phone{
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-grey-white);
+}
+
+.footer-second-list {
+  list-style: none;
+}
+.footer-second-item a{
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-gold)
+}
+.footer-about-us {
+  background-color: var(--basic-dark-blue);
+}
+.footer-all-rights {
+  font-size: 16px;
+  line-height: 18px;
+  color:var(--basic-white)
+}
+.social-list {
+  list-style: none;
+}
+.social-button {
+
+}
+.footer-feedback {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+.footer-mail {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-gold);
+}
+.footer-copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+
+}
+.footer-copyright-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-gold);
+}
+
+.footer-mail:hover, .footer-copyright-link:hover {
+  text-decoration: underline;
+}
+
+.footer-mail:active, .footer-copyright-link:active {
+  text-decoration: none;
+  color:var(--basic-red);
+}
