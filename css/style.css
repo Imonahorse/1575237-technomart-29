@@ -45,10 +45,11 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  font-family: Cuprum, Ariel, sans-serif;
+  font-family: "Cuprum", "Ariel", sans-serif;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
+
 .page a {
   text-decoration: none;
 }
@@ -127,6 +128,7 @@
   list-style: none;
   background: rgba(0, 0, 0, 0.0001);
 }
+
 .user a {
   font-size: 21px;
   line-height: 21px;
@@ -137,6 +139,7 @@
 .user a:hover {
   color: var(--basic-red);
 }
+
 .user a:active {
   color: var(--basic-dark-gray);
 }
@@ -250,6 +253,7 @@
 .offer-item-discounts {
   background-color: var(--basic-green);
 }
+
 .offer-item-delivery {
   background-color: var(--basic-yellow);
 }
@@ -436,15 +440,18 @@
   text-transform: uppercase;
   color: var(--basic-black);
 }
+
 .contacs-prescription {
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", sans-serif;
   color: var(--basic-black);
 }
+
 .map {
   background: var(--basic-light-white-transparent);
 }
+
 .map-help {
   font-size: 14px;
   line-height: 18px;
@@ -505,19 +512,23 @@
 .footer-second-list {
   list-style: none;
 }
+
 .footer-second-item a {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-gold);
 }
+
 .footer-about-us {
   background-color: var(--basic-dark-blue);
 }
+
 .footer-all-rights {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
 }
+
 .social-list {
   list-style: none;
 }
@@ -533,11 +544,13 @@
   line-height: 18px;
   color: var(--basic-gold);
 }
+
 .footer-copyright {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
 }
+
 .footer-copyright-link {
   font-size: 16px;
   line-height: 18px;
@@ -584,6 +597,7 @@
 .sorting-list {
   list-style: none;
 }
+
 .sorting-headline {
   font-size: 13px;
   line-height: 18px;
@@ -630,6 +644,7 @@
   box-shadow: inset 0px -3px 0px #367315;
   border-radius: 2px;
 }
+
 .card-bookmark {
   font-size: 14px;
   line-height: 18px;
