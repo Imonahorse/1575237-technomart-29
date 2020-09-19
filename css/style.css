@@ -26,7 +26,7 @@
   --special-light-grey: #a9a9a9;
   --special-light-blue: #32425c;
   --special-dark-blue: #1d2739;
-  --special-yellow: #f7f3ec;
+  --special-dark-yellow: #f7f3ec;
   --basic-light-white-transparent: rgba(0, 0, 0, 0.0001);
 }
 
@@ -45,7 +45,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  font-family: "Cuprum", "Ariel", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -60,7 +60,7 @@
   background-color: var(--basic-silver);
 }
 
-.header-menu {
+.header-wrapper {
   background-color: var(--basic-dark-blue);
 }
 
@@ -117,7 +117,7 @@
   box-sizing: border-box;
 }
 
-.header-adress {
+.header-address {
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -175,7 +175,7 @@
   list-style: none;
 }
 
-.offer-headline {
+.offer-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -188,7 +188,6 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
-  text-align: center;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -206,7 +205,7 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.offer-headline-slider {
+.offer-title-slider {
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
@@ -260,8 +259,8 @@
 
 /*!ПОПУЛЯРНЫЕ ПРЕДЛОЖЕНИЯ И БРЕНДЫ*/
 
-.bestsellers-headline,
-.brands-headline {
+.bestsellers-title,
+.brands-title {
   background-color: var(--basic-brown);
 }
 
@@ -340,7 +339,7 @@
   list-style: none;
 }
 
-.services-headline {
+.services-title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -373,7 +372,7 @@
   box-shadow: 0px 1px 0px var(--basic-light-white-transparent);
 }
 
-.services-slider-headline {
+.services-slider-title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -398,7 +397,7 @@
 
 /*!COMPANY*/
 
-.company-headline {
+.company-title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -432,16 +431,16 @@
   background-color: var(--basic-red);
 }
 
-/*!CONTACS*/
+/*!CONTACTS*/
 
-.contacs-headline {
+.contacts-title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
 }
 
-.contacs-prescription {
+.contacts-prescription {
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", sans-serif;
@@ -467,7 +466,7 @@
   background-color: var(--basic-blue);
 }
 
-.footer-menu {
+.footer-wrapper {
   background-color: var(--basic-blue);
 }
 
@@ -487,33 +486,33 @@
 }
 
 .footer-navigation-item a:hover,
-.footer-second-item a:hover {
+.footer-additional-item a:hover {
   text-decoration: underline;
 }
 
 .footer-navigation-item a:active,
-.footer-second-item a:active {
+.footer-additional-item a:active {
   mix-blend-mode: normal;
   opacity: 0.5;
   text-decoration: none;
 }
 
-.footer-second-menu {
+.footer-additional-menu {
   background-color: var(--basic-blue);
 }
 
-.footer-adress,
+.footer-address,
 .footer-phone {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-grey-white);
 }
 
-.footer-second-list {
+.footer-additional-list {
   list-style: none;
 }
 
-.footer-second-item a {
+.footer-additional-item a {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-gold);
@@ -575,14 +574,14 @@
 }
 
 .breadcrumbs-item a {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
 }
 
-.perforators {
+.product {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -590,7 +589,7 @@
   background-color: var(--basic-yellow-green-red-black);
 }
 
-.sorting-navigation {
+.sorting {
   background-color: var(--special-yellow);
 }
 
@@ -598,24 +597,24 @@
   list-style: none;
 }
 
-.sorting-headline {
+.sorting-title {
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: var(--basic-black);
 }
 
 .sorting-item-price a {
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: var(--basic-red);
 }
 
 .sorting-item-type a {
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: var(--basic-black);
   opacity: 0.3;
   border-bottom: 1px dashed var(--basic-red);
@@ -624,7 +623,7 @@
 .sorting-item-function a {
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: var(--basic-black);
   opacity: 0.3;
   border-bottom: 1px dashed var(--basic-red);
@@ -663,7 +662,7 @@
   font-size: 13px;
   line-height: 18px;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: var(--basic-white);
   background-color: var(--basic-red);
 }
@@ -672,7 +671,7 @@
   font-size: 13px;
   line-height: 18px;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: var(--basic-black);
   background-color: var(--basic-white);
   border: 1px solid #e5e5e5;
@@ -680,20 +679,20 @@
   border-radius: 2px;
 }
 
-.about-perforators {
+.about-product {
   background-color: var(--basic-light-grey);
 }
 
-.about-perforators-headline {
+.about-product-title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
 }
 
-.about-perforators-description {
+.about-product-description {
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: var(--basic-black);
 }
