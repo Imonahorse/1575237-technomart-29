@@ -499,6 +499,16 @@
 
 /*!ПОПУЛЯРНЫЕ ПРЕДЛОЖЕНИЯ И БРЕНДЫ*/
 
+.catalog-title {
+  font-size: 30px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--special-button-wrift);
+  background-color: var(--basic-yellow-green-red-black);
+  margin-bottom: 20px;
+}
+
 .bestsellers-title,
 .brands-title {
   background-color: var(--basic-brown);
@@ -892,7 +902,12 @@
 /*!Каталог*/
 
 .breadcrumbs-list {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  gap: 20px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -901,6 +916,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin-bottom: 20px;
 }
 
 .product {
@@ -912,11 +928,18 @@
 }
 
 .sorting {
+  display: grid;
+  grid-template-columns: auto auto;
   background-color: var(--special-dark-yellow);
 }
 
 .sorting-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto auto min-content min-content;
+  grid-template-rows: auto;
 }
 
 .sorting-title {
@@ -951,6 +974,7 @@
   border-bottom: 1px dashed var(--basic-red);
 }
 
+
 .sorting-item-type:hover .sorting-link-type,
 .sorting-item-function:hover .sorting-link-function {
   color: var(--basic-black);
@@ -982,7 +1006,12 @@
 }
 
 .catalog-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .card-menu {
@@ -1035,7 +1064,12 @@
 }
 
 .pagination-list {
+  display: grid;
+  grid-template-columns: 30px 30px 30px auto;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 70px;
 }
 
 .pagination-item-select {
