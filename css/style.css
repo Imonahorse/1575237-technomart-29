@@ -76,8 +76,6 @@
 .main-header {
   background-color: var(--basic-silver);
   margin-bottom: 120px;
-  outline: 5px solid green;
-  outline-offset: -2px;
 }
 
 .header-logo {
@@ -88,7 +86,6 @@
 .container,
 .footer-wrapper {
   display: grid;
-  outline: 1px solid yellowgreen;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
@@ -100,19 +97,15 @@
 
 .header-main-menu {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   background-color: var(--basic-dark-blue);
-  outline: 5px solid orange;
-  outline-offset: -8px;
 }
 
 .header-additional-menu {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, auto);
   gap: 20px;
-  outline: 5px solid orangered;
-  outline-offset: -8px;
 }
 
 .header-contacts {
@@ -298,8 +291,6 @@
 .main-navigation {
   background-color: var(--special-light-blue);
   box-shadow: inset 0px -5px 0px #293449;
-  outline: 5px solid blueviolet;
-  outline-offset: -8px;
 }
 
 .site-navigation {
@@ -359,8 +350,8 @@
 
 .offer-list {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 125px 125px 125px;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 125px);
   gap: 20px;
   list-style: none;
   margin: 0;
@@ -537,7 +528,7 @@
 .bestsellers-list,
 .brands-list {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, auto);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -768,8 +759,6 @@
 
 .main-footer {
   background-color: var(--basic-blue);
-  outline: 5px solid red;
-  outline-offset: -5px;
 }
 
 .footer-wrapper {
@@ -778,12 +767,12 @@
 
 .footer-main-menu {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, auto);
 }
 
 .footer-navigation-list {
   display: grid;
-  grid-template-columns: 80px 80px 80px 80px 80px;
+  grid-template-columns: repeat(5, 80px);
   column-gap: 60px;
   list-style: none;
 
@@ -809,7 +798,7 @@
 
 .footer-additional-menu {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, auto);
   background-color: var(--basic-blue);
 }
 
@@ -822,7 +811,7 @@
 
 .footer-additional-list {
   display: grid;
-  grid-template-columns: 80px 80px 80px 80px 80px;
+  grid-template-columns: repeat(5, 80px);
   column-gap: 50px;
   list-style: none;
 }
