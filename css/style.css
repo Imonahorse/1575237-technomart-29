@@ -437,10 +437,6 @@
   background-color: var(--basic-white);
 }
 
-.offer-slider-item {
-  list-style-type: none;
-}
-
 .offer-item {
   background-repeat: no-repeat;
   background-position: 100px;
@@ -480,7 +476,7 @@
 
 .offer-item-slider {
   display: grid;
-  grid-template-columns: 620;
+  grid-template-columns: auto;
 }
 
 .offer-title-slider {
@@ -787,7 +783,7 @@
 
 .footer-navigation-list {
   display: grid;
-  grid-template-columns: repeat(5, 80px);
+  grid-template-columns: 80px 80px 80px 80px 80px;
   column-gap: 60px;
   list-style: none;
 
@@ -826,7 +822,7 @@
 
 .footer-additional-list {
   display: grid;
-  grid-template-columns: repeat(5, 80px);
+  grid-template-columns: 80px 80px 80px 80px 80px;
   column-gap: 50px;
   list-style: none;
 }
