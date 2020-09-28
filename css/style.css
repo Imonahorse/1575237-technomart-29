@@ -108,13 +108,6 @@
   gap: 20px;
 }
 
-.header-contacts {
-  display: grid;
-  grid-template-areas:
-    "tel tel tel tel tel tel"
-    "adrs adrs adrs adrs adrs adrs";
-}
-
 .header-bookmark {
   font-size: 18px;
   line-height: 24px;
@@ -179,7 +172,6 @@
 }
 
 .header-phone {
-  grid-area: "tel";
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
@@ -193,7 +185,6 @@
 }
 
 .header-address {
-  grid-area: "adrs";
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -289,20 +280,24 @@
 }
 
 .main-navigation {
+  min-height: 60px;
+  outline: 5px solid green;
   background-color: var(--special-light-blue);
   box-shadow: inset 0px -5px 0px #293449;
 }
 
 .site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 20px;
   list-style: none;
 }
 
-.navigation-item1 {
+
+/*.navigation-item1 {
   grid-column: 1/3;
 }
 
@@ -328,7 +323,7 @@
 
 .navigation-item7 {
   grid-column: 11/13;
-}
+}*/
 
 .site-navigation a {
   list-style: none;
