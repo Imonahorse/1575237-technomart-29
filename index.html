@@ -42,26 +42,24 @@
               </svg>
               Закладки:0
             </a>
-          </p>
-          <ul class="header-order">
-            <li>
-              <a class="basket-link" href="#">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="basket-icon-color"
-                    d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
-                  <path class="basket-icon-color"
-                    d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
-                  <path class="basket-icon-color" d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z">
-                </svg>
-                Корзина:0
-              </a>
-            </li>
-            <li>
-              <a class="order-link" href="#">
-                Оформить заказ
-              </a>
-            </li>
-          </ul>
+          </div>
+          <div class="header-basket">
+            <a class="basket-link" href="#">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="basket-icon-color"
+                  d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
+                <path class="basket-icon-color"
+                  d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
+                <path class="basket-icon-color" d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z">
+              </svg>
+              Корзина:0
+            </a>
+          </div>
+          <div class="header-order">
+            <a class="order-link" href="#">
+              Оформить заказ
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -74,23 +72,23 @@
         </p>
         <div class="header-contacts">
           <a class="header-phone" href="tel:+78125550555">+7(812)555-05-55</a>
-          <p class="header-address"></p>
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <p class="header-address">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
         </div>
-        <ul class="user">
-          <li>
-            <a class="login-link" href="#">
-              <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="icon" d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" />
-                <path class="icon"
-                  d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" />
-              </svg>
-              Вход
-            </a>
-          </li>
-          <li><a class="registration" href="#">Регистрация</a></li>
-        </ul>
+        <div class="login">
+          <a class="login-link" href="#">
+            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="icon" d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" />
+              <path class="icon"
+                d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" />
+            </svg>
+            Вход
+          </a>
+        </div>
+        <div>
+          <a class="registration-link" href="#">Регистрация</a>
+        </div>
       </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -120,33 +118,33 @@
     </div>
   </header>
   <main class="container">
-    <h1>Магазин техники «Техномарт»</h1>
+    <h1 class="visually-hidden">Магазин техники «Техномарт»</h1>
     <section class="offer">
-      <h2>Товары и услуги</h2>
+      <h2 class="visually-hidden">Товары и услуги</h2>
       <ul class="offer-list">
         <li class="offer-item offer-item-materials">
           <p class="offer-title">Материалы</p>
-          <a class="offer-link" href="#">На любой вкус</a>
+          <p class="penis"><a class="offer-link offer-link-materials" href="#">На любой вкус</a></p>
         </li>
         <li class=" offer-item offer-item-tools">
           <p class="offer-title">Инструменты</p>
-          <a class="offer-link" href="#">На все случаи жизни</a>
+          <a class="offer-link offer-link-tools" href="#">На все случаи</a>
         </li>
         <li class=" offer-item offer-item-technics">
           <p class="offer-title">Техника</p>
-          <a class="offer-link" href="#">Для стройки</a>
+          <a class="offer-link offer-link-technics" href="#">Для стройки</a>
         </li>
         <li class=" offer-item offer-item-discounts">
           <p class="offer-title">Скидки</p>
-          <a class="offer-link" href="#">На 350 товаров</a>
+          <a class="offer-link offer-link-discounts" href="#">На 350 товаров</a>
         </li>
         <li class=" offer-item offer-item-delivery">
           <p class="offer-title">Доставка</p>
-          <a class="offer-link" href="#">Бесплатно</a>
+          <a class="offer-link offer-link-delivery" href="#">Бесплатно</a>
         </li>
         <li class="offer-slider-item offer-item-slider">
           <p class="offer-title-slider">Перфораторы</p>
-          <p class="offer-title-slider">Настоящие мужские игрушки</p>
+          <p class="offer-prescription-slider">Настоящие мужские игрушки</p>
           <a class="slider-photo" href="#">
             <img src="img/Rotary-hammer.jpg" width="620" height="266" alt="Фотография мужчины с перфоратором">
           </a>
@@ -172,9 +170,10 @@
         <ul class="bestsellers-list">
           <li class="bestsellers-item">
             <article class="card">
-              <a href="#">
+              <a class="card-link" href="#">
                 <h3 class="card-title">Перфоратор BOSCHBFG 9000</h3>
-                <img src="img/BOSCH-BFG-3000.png" width="184" height="164" alt="Перфоратор BOSCHBFG 9000">
+                <img class="card-image" src="img/BOSCH-BFG-3000.png" width="184" height="164"
+                  alt="Перфоратор BOSCHBFG 9000">
               </a>
               <p class="old-price">32500р</p>
               <a class="new-price" href="#">25500р</a>
@@ -182,9 +181,10 @@
           </li>
           <li class="bestsellers-item">
             <article class="card">
-              <a href="#">
+              <a class="card-link" href="#">
                 <h3 class="card-title">Перфоратор BOSCHBFG 3000</h3>
-                <img src="img/BOSCH-BFG-6000.png" width="184" height="164" alt="Перфоратор BOSCHBFG 3000">
+                <img class="card-image" src="img/BOSCH-BFG-6000.png" width="127" height="112"
+                  alt="Перфоратор BOSCHBFG 3000">
               </a>
               <p class="old-price">22500р</p>
               <a class="new-price" href="#">15500р</a>
@@ -192,9 +192,10 @@
           </li>
           <li class="bestsellers-item">
             <article class="card">
-              <a href="#">
+              <a class="card-link" href="#">
                 <h3 class="card-title">Перфоратор BOSCHBFG 6000</h3>
-                <img src="img/BOSCH-BFG-3000.png" width="184" height="164" alt="Перфоратор BOSCHBFG 6000">
+                <img class="card-image" src="img/BOSCH-BFG-9000.png" width="144" height="128"
+                  alt="Перфоратор BOSCHBFG 6000">
               </a>
               <p class="old-price">30500р</p>
               <a class="new-price" href="#">25500р</a>
@@ -202,9 +203,10 @@
           </li>
           <li class="bestsellers-item">
             <article class="card">
-              <a href="#">
+              <a class="card-link" href="#">
                 <h3 class="card-title">Перфоратор BOSCHBFG 2000</h3>
-                <img src="img/BOSCH-BFG-9000.png" width="184" height="164" alt="Перфоратор BOSCHBFG 2000">
+                <img class="card-image" src="img/BOSCH-BFG-6000.png" width="127" height="112"
+                  alt="Перфоратор BOSCHBFG 2000">
               </a>
               <a class="new-price" href="#">15500р</a>
             </article>
@@ -214,7 +216,7 @@
     </section>
     <section class="brands">
       <div class="brands-title">
-        <h2 class="popular">Популярные производители</h2>
+        <h2 class="popular">Популярные производители:</h2>
         <a class="popular-link" href="#">Все производители</a>
       </div>
       <div class="brands-catalog">
