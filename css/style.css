@@ -79,12 +79,9 @@
 }
 
 /*!HEADER*/
-.logo-position {
-  background-position: 300px;
-}
 
 .main-header {
-  height: 320px;
+  min-height: 320px;
   background-color: var(--basic-silver);
   margin-bottom: 59px;
 }
@@ -110,13 +107,13 @@
 }
 
 .header-inner {
-  height: 42px;
+  min-height: 42px;
   background-color: var(--basic-dark-blue);
   margin-bottom: 46px;
 }
 
 .header-main-menu {
-  height: 42px;
+  min-height: 42px;
   display: flex;
   align-items: center;
   background-color: var(--basic-dark-blue);
@@ -148,6 +145,15 @@
 
 .header-basket {
   margin-right: 25px;
+}
+
+.header-basket-catalog {
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 136px;
+  min-height: 142px;
 }
 
 .bookmark-link {
@@ -187,13 +193,12 @@
 }
 
 .order-link {
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px 15px;
   width: 150px;
-  height: 42px;
+  min-height: 42px;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -213,7 +218,7 @@
   margin: 0;
   padding: 0;
   width: 197px;
-  height: 71px;
+  min-height: 71px;
   margin-right: 93px;
   margin-bottom: 45px;
   font-size: 16px;
@@ -227,10 +232,9 @@
 }
 
 .header-phone {
-  display: block;
   display: flex;
   width: 270px;
-  height: 45px;
+  min-height: 45px;
   justify-content: center;
   align-items: center;
   padding: 5px 15px;
@@ -261,23 +265,21 @@
 }
 
 .login-link {
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 15px;
   width: 121px;
-  height: 45px;
+  min-height: 45px;
 }
 
 .registration-link {
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 15px;
   width: 150px;
-  height: 45px;
+  min-height: 45px;
 }
 
 .login-link,
@@ -460,6 +462,12 @@
 
 .basket-link-catalog {
   background-color: var(--special-red);
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 136px;
+  min-height: 42px;
 }
 
 .offer-title-slider {
@@ -479,12 +487,11 @@
 }
 
 .offer-link-slider {
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 192px;
-  height: 38px;
+  min-height: 38px;
   padding: 5px 15px;
   font-size: 14px;
   line-height: 18px;
@@ -591,15 +598,7 @@
 
 /*!ПОПУЛЯРНЫЕ ПРЕДЛОЖЕНИЯ И БРЕНДЫ*/
 
-.catalog-title {
-  font-size: 30px;
-  line-height: 30px;
-  align-items: center;
-  text-transform: uppercase;
-  color: var(--special-button-wrift);
-  background-color: var(--basic-yellow-green-red-black);
-  margin-bottom: 20px;
-}
+
 
 .bestsellers-navigation,
 .brands-navigation {
@@ -633,12 +632,11 @@
 
 .bestsellers-navigation-link,
 .brands-navigation-link {
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 192px;
-  height: 38px;
+  min-height: 38px;
   padding: 5px 15px;
   font-size: 14px;
   line-height: 18px;
@@ -698,7 +696,7 @@
 
 .card-image-wrapper {
   width: 220px;
-  height: 170px;
+  min-height: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -741,7 +739,7 @@
   margin-bottom: 20px;
   order: 3;
   width: 141px;
-  height: 38px;
+  min-height: 38px;
   vertical-align: middle;
   padding: 5px;
   font-size: 17px;
@@ -899,7 +897,6 @@
 }
 
 .company-info {
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -934,12 +931,11 @@
 }
 
 .map-help {
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 300px;
-  height: 38px;
+  min-height: 38px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1080,7 +1076,7 @@
 .social-item {
   display: block;
   width: 44px;
-  height: 44px;
+  min-height: 44px;
 }
 
 .social-item-vkontakte {
@@ -1102,10 +1098,6 @@
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
-}
-
-.test {
-  background-color: red;
 }
 
 .footer-mail {
@@ -1142,12 +1134,25 @@
 /*!Каталог*/
 
 .breadcrumbs-list {
-  display: grid;
-  grid-template-columns: repeat(3, min-content);
-  gap: 20px;
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.catalog-title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--special-button-wrift);
+  background-color: var(--basic-yellow-green-red-black);
+}
+
+.breadcrumbs-item:first-child::before {
+  content: url(../img/icon-home.svg);
+  margin-right: 15px;
 }
 
 .breadcrumbs-link {
@@ -1157,6 +1162,20 @@
   text-transform: uppercase;
   color: var(--basic-black);
   margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+.breadcrumbs-link::before {
+  content: url(../img/icon-right-small.svg);
+  margin-right: 16px;
+}
+
+.breadcrumbs-selected {
+  padding-left: 30px;
+  padding-top: 30px;
+  width: 940px;
+  min-height: 90px;
+  background-color: var(--basic-yellow-green-red-black);
 }
 
 .product {
@@ -1356,4 +1375,13 @@
   line-height: 24px;
   font-family: "PT Sans", sans-serif;
   color: var(--basic-black);
+}
+
+.filters-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  min-height: 38px;
+  background-color: var(--special-dark-yellow);
 }
