@@ -71,6 +71,11 @@
   text-decoration: none;
 }
 
+.page img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -603,21 +608,21 @@
   grid-column: 1/2;
   grid-row: 1/2;
   background-color: var(--basic-yellow);
-  background-image: url(../img/vedro.svg);
+  background-image: url(../img/bucket.svg);
 }
 
 .offer-item-tools {
   grid-column: 2/3;
   grid-row: 1/2;
   background-color: var(--special-blue);
-  background-image: url(../img/drell.svg);
+  background-image: url(../img/drill.svg);
 }
 
 .offer-item-technics {
   grid-column: 3/4;
   grid-row: 1/2;
   background-color: var(--special-violet);
-  background-image: url(../img/traktor.svg);
+  background-image: url(../img/traсtor.svg);
 }
 
 .offer-slider-item {
@@ -729,7 +734,7 @@
 
 .offer-item-discounts {
   background-color: var(--basic-green);
-  background-image: url(../img/korzina.svg);
+  background-image: url(../img/basket.svg);
 }
 
 .offer-item-delivery {
@@ -958,7 +963,7 @@
   transform: rotate(45deg);
 }
 
-. .brands-item {
+.brands-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1036,15 +1041,15 @@
 }
 
 .services-delivery {
-  background-image: url(../img/dostavka.png);
+  background-image: url(../img/delivery.png);
 }
 
 .services-guarantee {
-  background-image: url(../img/garantia.png);
+  background-image: url(../img/guaranty.png);
 }
 
 .services-credit {
-  background-image: url(../img/kredit.png);
+  background-image: url(../img/credit.png);
 }
 
 .services-controls::before {
@@ -1854,7 +1859,7 @@
   top: -1px;
   width: 25px;
   min-height: 20px;
-  background: url(../img/Shapetwo.svg);
+  background: url(../img/shape-two.svg);
   background-repeat: no-repeat;
 }
 
@@ -1866,7 +1871,7 @@
   width: 25px;
   min-height: 25px;
   border-radius: 50%;
-  background: url(../img/Shape-border.svg);
+  background: url(../img/shape-border.svg);
 }
 
 .radio:checked+label::after {
@@ -1877,7 +1882,7 @@
   width: 9px;
   min-height: 9px;
   border-radius: 50%;
-  background: url(../img/Oval.svg);
+  background: url(../img/oval.svg);
 }
 
 .filter-radio {
