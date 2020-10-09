@@ -86,7 +86,7 @@
 
 /*!HEADER*/
 
-.main-header-index {
+.main-header {
   min-height: 320px;
   margin-bottom: 59px;
   background-color: var(--basic-silver);
@@ -200,6 +200,10 @@
   padding-left: 30px;
 }
 
+.header-bookmark-catalog {
+  margin-right: auto;
+}
+
 .bookmark-link {
   display: flex;
   flex-wrap: wrap;
@@ -296,6 +300,10 @@
   margin-right: 69px;
 }
 
+.header-contacts-catalog {
+  margin-right: 51px;
+}
+
 .header-phone {
   display: flex;
   flex-wrap: wrap;
@@ -390,7 +398,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 41px;
+  margin-left: 45px;
+  margin-top: 5px;
 }
 
 .user-name {
@@ -508,8 +517,6 @@
 }
 
 .navigation-item:active {
-  min-width: 122px;
-  min-height: 60px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -518,8 +525,8 @@
 }
 
 .main-header-catalog {
-  min-height: 310px;
-  margin-bottom: 21px;
+  min-height: 320px;
+  margin-bottom: 20px;
   background-color: var(--basic-silver);
 }
 
@@ -581,7 +588,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 0;
-  width: 150px;
+  width: 136px;
   min-height: 42px;
   padding: 5px 15px;
   background-color: var(--special-red);
@@ -1556,7 +1563,7 @@
 
 .breadcrumbs-item:first-child::before {
   content: url(../img/icon-home.svg);
-  margin-right: 15px;
+  margin-right: 37px;
 }
 
 .breadcrumbs-link {
@@ -1576,7 +1583,7 @@
 
 .breadcrumbs-selected {
   padding-left: 30px;
-  padding-top: 30px;
+  padding-top: 25px;
   width: 940px;
   min-height: 90px;
   background-color: var(--basic-yellow-green-red-black);
@@ -1866,9 +1873,11 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   width: 220px;
   min-height: 38px;
+  padding-left: 18px;
+  padding-bottom: 10px;
   background-color: var(--special-dark-yellow);
 }
 
@@ -1997,6 +2006,9 @@
 }
 
 .scale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 180px;
   min-height: 2px;
   background-color: #D7DCDE;
@@ -2010,9 +2022,11 @@
 }
 
 .range-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background-color: var(--special-dark-yellow);
-  padding: 39px 48px 39px 20px;
   width: 220px;
   min-height: 80px;
   margin-bottom: 9px;
@@ -2065,6 +2079,9 @@
   background-color: var(--special-dark-yellow);
   text-align: center;
   border-radius: 2px;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .min-price-input {
