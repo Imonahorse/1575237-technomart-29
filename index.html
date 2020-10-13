@@ -10,7 +10,7 @@
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+
 </head>
 
 <body class="page-body">
@@ -27,14 +27,13 @@
             </svg>
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-            <label class="visually-hidden" for="search">Поиск</label>
-            <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.3">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
               </g>
             </svg>
+            <label class="visually-hidden" for="search">Поиск</label>
             <input class="search-input" type="search" name="search" id="search" placeholder="Поиск:">
           </form>
           <div class="header-bookmark">
@@ -75,25 +74,25 @@
           строительных материалов<br>
           и инструментов для ремонта
         </p>
-        <div class="header-contacts">
-          <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p class="header-address">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
-        </div>
-        <div class="login">
-          <a class="login-link" href="#">
-            <svg class="login-icon" width="20" height="17" viewBox="0 0 20 17" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" />
-              <path
-                d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" />
-            </svg>
-            Войти
-          </a>
-        </div>
-        <div>
-          <a class="registration-link" href="#">Регистрация</a>
+        <div class="additional-menu-inner">
+          <div class="header-contacts">
+            <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p class="header-address">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+          </div>
+          <div class="login">
+            <a class="login-link" href="#">
+              <svg class="login-icon" width="20" height="17" viewBox="0 0 20 17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" />
+                <path
+                  d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" />
+              </svg>
+              Войти
+            </a>
+            <a class="registration-link" href="#">Регистрация</a>
+          </div>
         </div>
       </div>
       <nav class="main-navigation">
@@ -197,7 +196,7 @@
                   <a class="card-buy" href="#">Купить</a>
                   <button class="card-bookmark" type="button">В закладки</button>
                 </div>
-                <p class="old-price">32500 р.</p>
+                <p class="old-price">32500 Р.</p>
                 <a class="new-price" href="#">25500 р.</a>
               </article>
             </li>
@@ -212,7 +211,7 @@
                   <a class="card-buy" href="#">Купить</a>
                   <button class="card-bookmark" type="button">В закладки</button>
                 </div>
-                <p class="old-price">22500 р.</p>
+                <p class="old-price">22500 Р.</p>
                 <a class="new-price" href="#">15500 р.</a>
               </article>
             </li>
@@ -227,7 +226,7 @@
                   <a class="card-buy" href="#">Купить</a>
                   <button class="card-bookmark" type="button">В закладки</button>
                 </div>
-                <p class="old-price">30500 р.</p>
+                <p class="old-price">30500 Р.</p>
                 <a class="new-price" href="#">25500 р.</a>
               </article>
             </li>
@@ -246,6 +245,7 @@
                 <a class="new-price" href="#">12500 р.</a>
               </article>
             </li>
+
           </ul>
         </div>
       </section>
@@ -318,8 +318,9 @@
               <li class="services-slider-item services-delivery services-slider-item-current">
                 <h3 class="services-slider-title">Доставка</h3>
                 <p class="services-slider-description">
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                  заработаем, поднимая его на ваш этаж!
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
                 </p>
               </li>
               <li class="services-slider-item services-guarantee">
@@ -381,7 +382,7 @@
     <div class="footer-wrapper">
       <div class="footer-main-menu">
         <a class="footer-logo" href="index.html">
-          <img src="img/index-logo.svg" width="220" height="68" alt="Логотип магазина «Техномарт»">
+          <img src="../img/index-logo.svg" width="220" height="68" alt="Логотип магазина «Техномарт»">
         </a>
         <ul class="footer-navigation-list">
           <li class="footer-navigation-item">
@@ -468,7 +469,7 @@
             <a class="footer-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="footer-copyright">
-            Разработано<br>
+            Разработано -<br>
             <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
@@ -476,7 +477,7 @@
     </div>
   </footer>
 
-  <section class="modal modal-login">
+  <section class="visually-hidden modal modal-login">
     <div class="modal-login-wrapper">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="GET">
@@ -490,7 +491,7 @@
         </p>
         <p>
           <label for="write-us-comment">Текст письма:</label>
-          <textarea class="comment modal-input" name="comment" id="comment" cols="81" rows="5"
+          <textarea class="comment modal-input" name="comment" id="write-us-comment" cols="81" rows="5"
             placeholder="В свободной форме"></textarea>
         </p>
         <div class="modal-button-wrapper">
@@ -501,13 +502,12 @@
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <section class="modal modal-map">
+  <section class="visually-hidden modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715590223!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602430245607!5m2!1sru!2sru"
-      allowfullscreen="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="943"
+      allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="943"
       height="449"></iframe>
-
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
