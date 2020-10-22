@@ -1584,7 +1584,7 @@
 
 .footer-address,
 .footer-phone {
-    width: 321px;
+    width: 341px;
     min-height: 49px;
     font-size: 18px;
     line-height: 24px;
@@ -1599,14 +1599,14 @@
 }
 
 .footer-additional-list {
-    width: 615px;
+    width: 590px;
     padding: 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     padding-top: 29px;
-    padding-left: 92px;
+    padding-left: 62px;
 }
 
 .footer-additional-item {
@@ -2401,6 +2401,7 @@
 /* !МОДАЛЬНОЕ ОКНО ОТЗЫВ */
 
 .modal {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -2580,4 +2581,85 @@
     background: var(--basic-red);
     top: 0;
     left: 0;
+}
+
+/* !МОДАЛЬНОЕ ОКНО КАТАЛОГ */
+
+.catalog-modal {
+    width: 620px;
+    min-height: 283px;
+    top: 120px;
+    bottom: auto;
+    box-shadow: 0px 20px 40px rgba(41, 52, 73, 0.75);
+    background: var(--basic-white);
+}
+
+.catalog-modal-wrapper {
+    position: relative;
+}
+
+.catalog-modal-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 620px;
+    height: 7px;
+    background: var(--basic-red);
+}
+
+.catalog-modal-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    top: 50px;
+    left: 70px;
+    background: url(../img/icon-mark.svg);
+}
+
+
+.catalog-modal-title {
+    padding: 70px 99px;
+    padding-left: 170px;
+}
+
+.catalog-modal-title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.catalog-modal-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+    min-height: 112px;
+    background: #f1f1f1;
+}
+
+.catalog-modal-button button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.catalog-modal-button button {
+    border: none;
+}
+
+.catalog-ordering {
+    padding: 10px 46px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+}
+
+.catalog-back {
+    padding: 10px 31px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-black);
+    background: var(--basic-white);
 }
