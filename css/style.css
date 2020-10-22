@@ -2291,6 +2291,7 @@
     text-transform: uppercase;
     border: 1px solid var(--basic-dark-grey);
     background-color: var(--basic-white);
+    cursor: pointer;
 }
 
 .scale {
@@ -2451,14 +2452,9 @@
     width: 22px;
     height: 22px;
     background: transparent;
-    border: 0;
+    border: none;
 }
 
-.modal-close:focus,
-.modal-close:visited,
-.modal-close:hover {
-    outline: none;
-}
 
 .modal-close::after,
 .modal-close::before {
