@@ -11,8 +11,6 @@ buttonRight.addEventListener("click", function(evt) {
   console.log("Клик по слайдеру");
   firstSlide.classList.remove("slider-current");
   secondSlide.classList.add("slider-current");
-  rightIndicator.classList.remove("indicator-current");
-  leftIndicator.classList.add("indicator-current");
 });
 
 buttonLeft.addEventListener("click", function(evt) {
@@ -20,6 +18,18 @@ buttonLeft.addEventListener("click", function(evt) {
   console.log("Клик по слайдеру");
   firstSlide.classList.remove("slider-current");
   secondSlide.classList.add("slider-current");
-  rightIndicator.classList.remove("indicator-current");
-  leftIndicator.classList.add("indicator-current");
+});
+
+leftIndicator.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  console.log("Клик по слайдеру");
+  firstSlide.classList.remove("slider-current");
+  secondSlide.classList.add("slider-current");
+});
+
+rightIndicator.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  console.log("Клик по слайдеру");
+  secondSlide.classList.remove("slider-current");
+  firstSlide.classList.add("slider-current");
 });

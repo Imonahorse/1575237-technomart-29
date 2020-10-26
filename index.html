@@ -152,14 +152,16 @@
                                 </li>
                             </ul>
                             <div class="slider-tumbler slider-controls">
-                                <button class="button-left" type="button" aria-label="Первый слайд"></button>
-                                <button class="button-right" type="button" aria-label="Второй слайд"></button>
+                                <button class="button-left" type="button" aria-label="Переключение слайда"></button>
+                                <button class="button-right" type="button" aria-label="Переключение слайда"></button>
                             </div>
                             <div class="slider-indicator">
-                                <div class="slider-indicator-wrapper">
-                                    <div class="left-indicator"></div>
-                                    <div class="right-indicator indicator-current"></div>
-                                </div>
+                                <form class="slider-indicator-wrapper">
+                                    <input type="radio" name="radio-left" value="" class="left-indicator">
+                                    <label for="radio-left" class="visually-hidden">Изменить слайд</label>
+                                    <input type="radio" name="radio-right" value="" class="right-indicator indicator-current">
+                                    <label for="radio-right" class="visually-hidden">Изменить слайд</label>
+                                </form>
                             </div>
                         </div>
                     </li>
