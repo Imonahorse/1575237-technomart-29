@@ -188,7 +188,7 @@
 }
 
 .footer-logo {
-    height: 68px;
+    min-height: 68px;
 }
 
 .header-logo {
@@ -257,6 +257,8 @@
 
 .bookmark-link-catalog {
     width: 164px;
+    text-align: unset;
+    padding: 11px 5px 5px 20px;
 }
 
 .bookmark-icon {
@@ -462,7 +464,7 @@
     margin: 0;
     padding: 0;
     margin-left: 45px;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 .my-orders::before {
@@ -551,7 +553,7 @@
     display: flex;
     width: 265px;
     min-height: 45px;
-    padding: 12px 14px;
+    padding: 10px 14px;
     color: var(--basic-black);
     background-color: var(--basic-white);
 }
@@ -709,7 +711,17 @@
     width: 136px;
     min-height: 42px;
     padding: 5px 15px;
+    padding-left: 5px;
     background-color: var(--special-red);
+}
+
+.basket-link-catalog svg {
+    fill: white;
+    opacity: 0.3;
+}
+
+.basket-icon-catalog {
+    margin-right: 8px;
 }
 
 .offer-title-slider {
@@ -860,17 +872,36 @@
 
 .left-indicator,
 .right-indicator {
+    position: relative;
+    user-select: none;
+    outline: none;
+}
+
+.left-indicator + label::before,
+.right-indicator + label::before {
+    content: "";
+    position: absolute;
     width: 10px;
     height: 10px;
-    background-color: white;
+    background: white;
     border-radius: 50%;
 }
 
-.indicator-current {
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border: 2px solid white;
+.left-indicator:focus + label::before,
+.right-indicator:focus + label::before {
+    content: "";
+    outline: 2px solid black;
+    outline-offset: 3px;
+}
+
+.left-indicator:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 2px;
+    left: 11px;
+    background: red;
     border-radius: 50%;
 }
 
@@ -1012,8 +1043,8 @@
     display: block;
     width: 219px;
     min-height: 170px;
-    margin-bottom: 4px;
-    padding-top: 38px;
+    margin-bottom: 5px;
+    padding-top: 36px;
     padding-left: 40px;
 }
 
@@ -1050,9 +1081,16 @@
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 
-.bestsellers-item:hover,
-.bestsellers-item:focus-within {
+.catalog-item-checked {
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.catalog-item-checked .card-image-wrapper {
+    display: none;
+}
+
+.catalog-item-checked .card-buy-menu {
+    display: block;
 }
 
 .card-title,
@@ -1216,6 +1254,7 @@
     padding-bottom: 10px;
 }
 
+.catalog-item:hover,
 .brands-link:hover,
 .brands-link:focus-within {
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
@@ -1575,7 +1614,7 @@
 }
 
 .footer-wrapper {
-    margin-bottom: 22px;
+    margin-bottom: 14px;
     background-color: var(--basic-blue);
 }
 
@@ -1600,7 +1639,7 @@
     flex-wrap: wrap;
     margin: 0;
     padding-top: 38px;
-    padding-left: 176px;
+    padding-left: 174px;
     list-style: none;
 }
 
@@ -1650,7 +1689,7 @@
     margin: 0;
     padding: 0;
     padding-left: 2px;
-    padding-top: 23px;
+    padding-top: 15px;
 }
 
 .footer-additional-list {
@@ -1660,7 +1699,7 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    padding-top: 29px;
+    padding-top: 20px;
     padding-left: 76px;
 }
 
@@ -1698,7 +1737,6 @@
     margin-right: 100px;
     font-size: 16px;
     line-height: 18px;
-    padding-top: 4px;
     padding-left: 2px;
     color: var(--basic-white);
 }
@@ -1975,16 +2013,13 @@
 }
 
 .card-buy {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: block;
     width: 135px;
     min-height: 38px;
     font-size: 14px;
     margin-bottom: 10px;
     line-height: 18px;
-    text-align: center;
+    padding: 8px 5px 5px 30px;
     text-transform: uppercase;
     color: var(--basic-white);
     background-color: var(--basic-dark-green);
@@ -2006,6 +2041,7 @@
 
 .card-buy::before {
     content: url(../img/icon-cart.svg);
+    margin-right: 10px;
 }
 
 .card-bookmark:hover {
@@ -2148,7 +2184,7 @@
 
 .product-wrapper {
     background-color: var(--basic-light-grey);
-    min-height: 259px;
+    min-height: 260px;
     padding-top: 38px;
 }
 
@@ -2211,7 +2247,8 @@
 }
 
 .radio:focus + label {
-    box-shadow: 0 0 0 3px white, 0 0 0 4px black;
+    box-shadow: 0 0 0 2px black;
+    border-radius: 3px;
 }
 
 .filter-checkbox label {
@@ -2229,7 +2266,6 @@
 
 .legend-battery {
     padding-left: 1px;
-    letter-spacing: 1.6px;
     margin-bottom: 50px;
 }
 
@@ -2245,7 +2281,6 @@
 }
 
 .legend-checkbox {
-    letter-spacing: 1.5px;
     padding-left: 1px;
     margin-bottom: 15px;
     font-weight: bold;
@@ -2314,15 +2349,11 @@
     font-size: 15px;
     line-height: 19px;
     padding-left: 36px;
-    margin-bottom: 37px;
-}
-
-.filter-radio label {
-    letter-spacing: 1.5px;
+    margin-bottom: 38px;
 }
 
 .filter-option {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
 }
 
 .filters-button {
@@ -2331,9 +2362,8 @@
     font-size: 13px;
     line-height: 18px;
     text-align: center;
-    letter-spacing: 1.5px;
     padding: 10px;
-    padding-left: 13px;
+    padding-left: 9px;
     font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
     border: 1px solid var(--basic-dark-grey);
@@ -2341,7 +2371,7 @@
     cursor: pointer;
 }
 
-.scale {
+.checkbox-bosch .scale {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2432,7 +2462,7 @@
 }
 
 .range {
-    margin-bottom: 42px;
+    margin-bottom: 41px;
 }
 
 .filters-checkbox {
