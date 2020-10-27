@@ -188,6 +188,7 @@
 }
 
 .footer-logo {
+    display: block;
     min-height: 68px;
 }
 
@@ -862,8 +863,6 @@
 .slider-indicator-wrapper {
     position: absolute;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 30px;
     height: 10px;
     top: -55px;
@@ -872,40 +871,38 @@
 
 .left-indicator,
 .right-indicator {
-    position: relative;
-    user-select: none;
-    outline: none;
-}
-
-.left-indicator + label::before,
-.right-indicator + label::before {
-    content: "";
-    position: absolute;
     width: 10px;
     height: 10px;
     background: white;
     border-radius: 50%;
     cursor: pointer;
+    margin-right: 7px;
+    outline: none;
+    border: none;
 }
 
-.left-indicator:focus + label::before,
-.right-indicator:focus + label::before {
-    content: "";
-    outline: 2px solid black;
-    outline-offset: 3px;
+.indicator-current {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
 
-.left-indicator:checked + label::after,
-.right-indicator:checked + label::after {
+.indicator-current::before {
     content: "";
     position: absolute;
     width: 6px;
     height: 6px;
-    top: 2px;
-    left: 11px;
     background: red;
     border-radius: 50%;
+    top: 2px;
+    left: 3px;
 }
+
 
 .offer-prescription-slider {
     position: absolute;
@@ -2661,17 +2658,20 @@
 .modal-map {
     top: 120px;
     bottom: auto;
-    position: relative;
     width: 943px;
     height: 449px;
     filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.75));
+}
+
+.modal-wrapper {
+    position: relative;
 }
 
 .modal-map iframe {
     border: none;
 }
 
-.modal-map::before {
+.modal-wrapper::before {
     content: "";
     position: absolute;
     width: 943px;
