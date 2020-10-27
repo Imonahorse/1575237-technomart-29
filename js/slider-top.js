@@ -9,15 +9,15 @@ const rightIndicator = document.querySelector(".right-indicator");
 buttonRight.addEventListener("click", function(evt) {
   evt.preventDefault();
   console.log("Клик по слайдеру");
-  firstSlide.classList.remove(".indicator-current");
-  secondSlide.classList.add(".indicator-current");
+  firstSlide.classList.remove("indicator-current");
+  secondSlide.classList.add("indicator-current");
 });
 
 buttonLeft.addEventListener("click", function(evt) {
   evt.preventDefault();
   console.log("Клик по слайдеру");
-  firstSlide.classList.remove(".indicator-current");
-  secondSlide.classList.add(".indicator-current");
+  firstSlide.classList.remove("indicator-current");
+  secondSlide.classList.add("indicator-current");
 });
 
 leftIndicator.addEventListener("click", function(evt) {

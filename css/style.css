@@ -885,6 +885,7 @@
     height: 10px;
     background: white;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .left-indicator:focus + label::before,
@@ -894,7 +895,8 @@
     outline-offset: 3px;
 }
 
-.left-indicator:checked + label::after {
+.left-indicator:checked + label::after,
+.right-indicator:checked + label::after {
     content: "";
     position: absolute;
     width: 6px;
