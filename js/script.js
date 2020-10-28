@@ -1,59 +1,20 @@
-// Открытие модального окна на главной странице
-const loginLink = document.querySelector(".map-help");
-const loginPopup = document.querySelector(".modal-login");
-const loginClose = loginPopup.querySelector(".modal-close");
-const loginLogin = loginPopup.querySelector(".modal-input-login");
-const loginPassword = loginPopup.querySelector(".modal-input-password");
-const loginForm = loginPopup.querySelector(".modal-form");
+// !модальное окно каталога
+const under = document.querySelector(".card-buy-menu");
+const addToBasket = under.querySelector(".card-buy");
+const catalogModal = document.querySelector(".catalog-modal");
+const catalogModalClose = catalogModal.querySelector(".catalog-modal-close");
+const modalFirstButton = catalogModal.querySelector(".catalog-ordering")
 
-let isStorageSupport = true;
-let storage = "";
-
-try {
-  storage = localStorage.getItem("login");
-} catch (err) {
-  isStorageSupport = false;
-}
-
-loginLink.addEventListener("click", function (evt) {
+addToBasket.addEventListener("click", function (evt) {
   evt.preventDefault();
-  loginPopup.classList.add("modal-show");
-
-  if (storage) {
-    loginLogin.value = storage;
-    loginPassword.focus();
-  } else {
-    loginLogin.focus();
-  }
+  catalogModal.classList.add("modal-show");
+  modalFirstButton.focus();
+  console.log("клик один")
 });
 
-loginClose.addEventListener("click", function (evt) {
+catalogModalClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  loginPopup.classList.remove("modal-show");
-  loginPopup.classList.remove("modal-error");
-});
-
-loginForm.addEventListener("submit", function (evt) {
-  if (!loginLogin.value || !loginPassword.value) {
-    evt.preventDefault();
-    loginPopup.classList.remove("modal-error");
-    loginPopup.offsetWidth = loginPopup.offsetWidth;
-    loginPopup.classList.add("modal-error");
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem("login", loginLogin.value);
-    }
-  }
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (loginPopup.classList.contains("modal-show")) {
-      evt.preventDefault();
-      loginPopup.classList.remove("modal-show");
-      loginPopup.classList.remove("modal-error");
-    }
-  }
+  catalogModal.classList.remove("modal-show");
 });
 
 
@@ -179,20 +140,61 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-// !модальное окно каталога
-const under = document.querySelector(".card-buy-menu");
-const addToBasket = under.querySelector(".card-buy");
-const catalogModal = document.querySelector(".catalog-modal");
-const catalogModalClose = catalogModal.querySelector(".catalog-modal-close");
+// Открытие модального окна на главной странице
+const loginLink = document.querySelector(".map-help");
+const loginPopup = document.querySelector(".modal-login");
+const loginClose = loginPopup.querySelector(".modal-close");
+const loginLogin = loginPopup.querySelector(".modal-input-login");
+const loginPassword = loginPopup.querySelector(".modal-input-password");
+const loginForm = loginPopup.querySelector(".modal-form");
 
-addToBasket.addEventListener("click", function (evt) {
+let isStorageSupport = true;
+let storage = "";
+
+try {
+  storage = localStorage.getItem("login");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+loginLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  catalogModal.classList.add("modal-show");
-  catalogModalClose.focus();
-  console.log("клик один")
+  loginPopup.classList.add("modal-show");
+
+  if (storage) {
+    loginLogin.value = storage;
+    loginPassword.focus();
+  } else {
+    loginLogin.focus();
+  }
 });
 
-catalogModalClose.addEventListener("click", function (evt) {
+loginClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  catalogModal.classList.remove("modal-show");
+  loginPopup.classList.remove("modal-show");
+  loginPopup.classList.remove("modal-error");
 });
+
+loginForm.addEventListener("submit", function (evt) {
+  if (!loginLogin.value || !loginPassword.value) {
+    evt.preventDefault();
+    loginPopup.classList.remove("modal-error");
+    loginPopup.offsetWidth = loginPopup.offsetWidth;
+    loginPopup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("login", loginLogin.value);
+    }
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (loginPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      loginPopup.classList.remove("modal-show");
+      loginPopup.classList.remove("modal-error");
+    }
+  }
+});
+
