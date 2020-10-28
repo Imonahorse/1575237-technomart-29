@@ -30,9 +30,9 @@
                             </g>
                         </svg>
                     </form>
-                    <div class="header-bookmark header-bookmark-catalog">
+                    <div class="header-bookmark">
                         <a class="bookmark-link bookmark-link-catalog" href="#">
-                            <svg class="bookmark-icon" aria-hidden="true" focusable="false" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="bookmark-icon bookmark-icon-catalog" aria-hidden="true" focusable="false" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" />
                             </svg>
                             Закладки: 0
@@ -40,7 +40,7 @@
                     </div>
                     <div class="header-basket">
                         <a class="basket-link basket-link-catalog" href="#">
-                            <svg class="basket-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="basket-icon basket-icon-catalog" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" />
                                 <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" />
                                 <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" />
@@ -93,7 +93,7 @@
                     </li>
                 </ul>
             </div>
-            <nav class="main-navigation">
+            <nav class="main-navigation" aria-label="Навигация по сайту">
                 <ul class="site-navigation">
                     <li class="navigation-item">
                         <a href="index.html">Главная</a>
@@ -102,7 +102,7 @@
                         <a href="#">Компания</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="catalog.html" aria-label="Текущая страница">Каталог</a>
+                        <a href="catalog.html" aria-current="page"><span class="visually-hidden">Текущая страница:</span>Каталог</a>
                     </li>
                     <li class="navigation-item">
                         <a href="#">Новости</a>
@@ -156,9 +156,7 @@
                             <div class="range">
                                 <div class="range-controls">
                                     <div class="scale">
-                                        <div class="bar" style="
-                      width:78%;
-                      ">
+                                        <div class="bar" style="width:78%;">
                                         </div>
                                     </div>
                                     <div class="toggle toggle-min" tabindex="0"></div>
@@ -175,7 +173,7 @@
                         <fieldset class="fieldset fieldset-checkbox">
                             <legend class="legend legend-checkbox legend-brands">Производители:</legend>
                             <ul class="checkbox-list">
-                                <li class="filter-option filters-checkbox">
+                                <li class="filter-option filter-checkbox">
                                     <input class="visually-hidden checkbox" type="checkbox" name="checkbox" value="BOSCH" id="checkbox-bosch" checked>
                                     <label for="checkbox-bosch">BOSCH</label>
                                 </li>
@@ -201,7 +199,7 @@
                             <legend class="legend legend-radio legend-battery">Питание:</legend>
                             <ul class="radio-list">
                                 <li class="filter-option filter-radio">
-                                    <input class="visually-hidden radio" type="radio" name="radio" v value="battery" id="battery" checked>
+                                    <input class="visually-hidden radio" type="radio" name="radio" value="battery" id="battery" checked>
                                     <label for="battery">АККУМУЛЯТОРНЫЕ</label>
                                 </li>
                                 <li class="filter-option filter-radio">
@@ -252,7 +250,7 @@
                         <h2 class="visually-hidden">Каталог</h2>
                         <ul class="catalog-list">
                             <li class="catalog-item">
-                                <article class="card">
+                                <article class="card" tabindex="0" aria-label="Карточка товара Техномарт">
                                     <h3 class="card-title">Перфоратор BOSCH BFG 6000</h3>
                                     <div class="card-image-wrapper">
                                         <img class="card-image" src="img/bosch-bfg-9000.png" width="144" height="128" alt="Перфоратор BOSCHBFG 6000">
@@ -261,12 +259,12 @@
                                         <a class="card-buy" href="#">Купить</a>
                                         <button class="card-bookmark" type="button">В закладки</button>
                                     </div>
-                                    <p class="old-price">30500 Р.</p>
-                                    <p class="new-price">25500 Р.</p>
+                                    <p class="old-price"><span class="visually-hidden">Старая цена</span>30500 Р.</p>
+                                    <p class="new-price"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
                                 </article>
                             </li>
                             <li class="catalog-item">
-                                <article class="card">
+                                <article class="card" tabindex="0" aria-label="Карточка товара Техномарт">
                                     <h3 class="card-title">Перфоратор BOSCH BFG 6000</h3>
                                     <div class="card-image-wrapper">
                                         <img class="card-image" src="img/bosch-bfg-9000.png" width="144" height="128" alt="Перфоратор BOSCHBFG 6000">
@@ -275,12 +273,12 @@
                                         <a class="card-buy" href="#">Купить</a>
                                         <button class="card-bookmark" type="button">В закладки</button>
                                     </div>
-                                    <p class="old-price">30500 Р.</p>
-                                    <p class="new-price">25500 Р.</p>
+                                    <p class="old-price"><span class="visually-hidden">Старая цена</span>30500 Р.</p>
+                                    <p class="new-price"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
                                 </article>
                             </li>
                             <li class="catalog-item new">
-                                <article class="card">
+                                <article class="card" tabindex="0" aria-label="Карточка товара Техномарт">
                                     <h3 class="card-title">Перфоратор BOSCH BFG 6000</h3>
                                     <div class="card-image-wrapper">
                                         <img class="card-image" src="img/bosch-bfg-9000.png" width="144" height="128" alt="Перфоратор BOSCHBFG 6000">
@@ -289,12 +287,12 @@
                                         <a class="card-buy" href="#">Купить</a>
                                         <button class="card-bookmark" type="button">В закладки</button>
                                     </div>
-                                    <p class="old-price">30500 Р.</p>
-                                    <p class="new-price">25500 Р.</p>
+                                    <p class="old-price"><span class="visually-hidden">Старая цена</span>30500 Р.</p>
+                                    <p class="new-price"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
                                 </article>
                             </li>
                             <li class="catalog-item new">
-                                <article class="card">
+                                <article class="card" tabindex="0" aria-label="Карточка товара Техномарт">
                                     <h3 class="card-title">Перфоратор BOSCH BFG 3000</h3>
                                     <div class="card-image-wrapper">
                                         <img class="card-image" src="/bosch-bfg-6000.png" width="127" height="112" alt="Перфоратор BOSCHBFG 3000">
@@ -303,12 +301,12 @@
                                         <a class="card-buy" href="#">Купить</a>
                                         <button class="card-bookmark" type="button">В закладки</button>
                                     </div>
-                                    <p class="old-price">22500 Р.</p>
-                                    <p class="new-price">15500 Р.</p>
+                                    <p class="old-price"><span class="visually-hidden">Старая цена</span>22500 Р.</p>
+                                    <p class="new-price"><span class="visually-hidden">Новая цена</span>15500 Р.</p>
                                 </article>
                             </li>
                             <li class="catalog-item">
-                                <article class="card">
+                                <article class="card" tabindex="0" aria-label="Карточка товара Техномарт">
                                     <h3 class="card-title">Перфоратор BOSCH BFG 6000</h3>
                                     <div class="card-image-wrapper">
                                         <img class="card-image" src="img/bosch-bfg-9000.png" width="144" height="128" alt="Перфоратор BOSCHBFG 6000">
@@ -317,26 +315,25 @@
                                         <a class="card-buy" href="#">Купить</a>
                                         <button class="card-bookmark" type="button">В закладки</button>
                                     </div>
-                                    <p class="old-price">30500 Р.</p>
-                                    <p class="new-price">25500 Р.</p>
+                                    <p class="old-price"><span class="visually-hidden">Старая цена</span>30500 Р.</p>
+                                    <p class="new-price"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
                                 </article>
                             </li>
                             <li class="catalog-item new">
-                                <article class="card">
+                                <article class="card" tabindex="0" aria-label="Карточка товара Техномарт">
                                     <h3 class="card-title">Перфоратор BOSCH BFG 2000</h3>
-                                    <div class="card-image-wrapper card-
-                additional-wrapper">
+                                    <div class="card-image-wrapper card-additional-wrapper">
                                         <img class="card-image" src="img/bosch-bfg-6000.png" width="127" height="112" alt="Перфоратор BOSCHBFG 2000">
                                     </div>
                                     <div class="card-buy-menu">
                                         <a class="card-buy" href="#">Купить</a>
                                         <button class="card-bookmark" type="button">В закладки</button>
                                     </div>
-                                    <p class="new-price">12500 Р.</p>
+                                    <p class="new-price"><span class="visually-hidden">Новая цена</span>12500 Р.</p>
                                 </article>
                             </li>
                             <li class="catalog-item new">
-                                <article class="card">
+                                <article class="card" tabindex="0" aria-label="Карточка товара Техномарт">
                                     <h3 class="card-title">Перфоратор BOSCH BFG 3000</h3>
                                     <div class="card-image-wrapper">
                                         <img class="card-image" src="img/bosch-bfg-6000.png" width="127" height="112" alt="Перфоратор BOSCHBFG 3000">
@@ -345,12 +342,12 @@
                                         <a class="card-buy" href="#">Купить</a>
                                         <button class="card-bookmark" type="button">В закладки</button>
                                     </div>
-                                    <p class="old-price">22500 Р.</p>
-                                    <p class="new-price">15500 Р.</p>
+                                    <p class="old-price"><span class="visually-hidden">Старая цена</span>22500 Р.</p>
+                                    <p class="new-price"><span class="visually-hidden">Новая цена</span>15500 Р.</p>
                                 </article>
                             </li>
                             <li class="catalog-item">
-                                <article class="card">
+                                <article class="card" tabindex="0" aria-label="Карточка товара Техномарт">
                                     <h3 class="card-title">Перфоратор BOSCH BFG 6000</h3>
                                     <div class="card-image-wrapper">
                                         <img class="card-image" src="img/bosch-bfg-9000.png" width="144" height="128" alt="Перфоратор BOSCHBFG 6000">
@@ -359,22 +356,21 @@
                                         <a class="card-buy" href="#">Купить</a>
                                         <button class="card-bookmark" type="button">В закладки</button>
                                     </div>
-                                    <p class="old-price">30500 Р.</p>
-                                    <p class="new-price">25500 Р.</p>
+                                    <p class="old-price"><span class="visually-hidden">Старая цена</span>30500 Р.</p>
+                                    <p class="new-price"><span class="visually-hidden">Новая цена</span>25500 Р.</p>
                                 </article>
                             </li>
                             <li class="catalog-item new">
-                                <article class="card">
+                                <article class="card" tabindex="0" aria-label="Карточка товара Техномарт">
                                     <h3 class="card-title">Перфоратор BOSCH BFG 2000</h3>
-                                    <div class="card-image-wrapper card-
-                additional-wrapper">
+                                    <div class="card-image-wrapper card-additional-wrapper">
                                         <img class="card-image" src="img/bosch-bfg-6000.png" width="127" height="112" alt="Перфоратор BOSCHBFG 2000">
                                     </div>
                                     <div class="card-buy-menu">
                                         <a class="card-buy" href="#">Купить</a>
                                         <button class="card-bookmark" type="button">В закладки</button>
                                     </div>
-                                    <p class="new-price">12500 Р.</p>
+                                    <p class="new-price"><span class="visually-hidden">Новая цена</span>12500 Р.</p>
                                 </article>
                             </li>
                         </ul>
@@ -507,7 +503,7 @@
         </div>
     </footer>
 
-    <section class="visually-hidden modal catalog-modal">
+    <section class="modal catalog-modal">
         <div class="catalog-modal-wrapper">
             <h2 class="catalog-modal-title">Товар добавлен в корзину!</h2>
             <div class="catalog-modal-button">
@@ -515,8 +511,12 @@
                 <button href="#" class="catalog-back">Продолжить покупки</button>
             </div>
         </div>
-        <button class="modal-close" type="button" aria-label="Закрыть" tabindex="0"></button>
+        <div class="catalog-modal-button-wrapper">
+            <button class="catalog-modal-close" type="button" aria-label="Закрыть" tabindex="0"></button>
+        </div>
     </section>
+
+    <script src="js/script.js"></script>
 
 </body>
 

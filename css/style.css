@@ -334,6 +334,10 @@
     margin-right: 8px;
 }
 
+.basket-link-catalog:hover .basket-icon-catalog {
+    opacity: 1;
+}
+
 .order-link {
     display: block;
     width: 150px;
@@ -507,20 +511,12 @@
     top: 9px;
 }
 
-.user-order:hover a {
+.user-item:hover a {
     color: red;
 }
 
-.user-order:hover .my-orders::before {
-    background: red;
-}
-
-.user-order:active a {
+.user-item:active a {
     color: var(--basic-dark-grey);
-}
-
-.user-order:active .my-orders::before {
-    background: var(--basic-dark-grey);
 }
 
 .user-name {
@@ -2068,6 +2064,7 @@
     color: var(--basic-blue);
     background-color: var(--basic-white);
     border: 2px solid var(--basic-dark-green);
+    cursor: pointer;
 }
 
 .pagination-list {
@@ -2381,6 +2378,12 @@
     margin-bottom: 10px;
 }
 
+.scale {
+    width: 180px;
+    height: 2px;
+    background: gray;
+}
+
 .bar {
     width: 70%;
     background-color: green;
@@ -2542,7 +2545,11 @@
 }
 
 .modal-form p:nth-child(3) {
-    margin-top: -1px;
+    margin-top: -12px;
+}
+
+.catalog-modal-button-wrapper {
+    position: relative;
 }
 
 .modal-close {
@@ -2556,8 +2563,21 @@
     border: none;
 }
 
+.catalog-modal-close {
+    position: absolute;
+    right: 11px;
+    top: -264px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: none;
+}
+
 .modal-close::after,
-.modal-close::before {
+.modal-close::before,
+.catalog-modal-close::after,
+.catalog-modal-close::before {
     content: "";
     position: absolute;
     width: 25px;
@@ -2567,17 +2587,18 @@
     top: 10px;
 }
 
-.modal-close::after {
+.modal-close::after,
+.catalog-modal-close::after {
     transform: rotate(45deg);
 }
 
-.modal-close::before {
+.modal-close::before,
+.catalog-modal-close::before {
     transform: rotate(-45deg);
 }
 
-.write-us-name,
-.write-us-email,
-.write-us-comment {
+.modal-input,
+.modal-label {
     font-size: 18px;
     line-height: 24px;
     font-family: "Cuprum", "Arial", sans-serif;
@@ -2585,19 +2606,8 @@
     margin-bottom: 11px;
 }
 
-.write-us-name {
-    width: 178px;
-    min-height: 24px;
-}
-
-.write-us-email {
-    width: 185px;
-    min-height: 24px;
-}
-
-.write-us-comment {
-    width: 202px;
-    min-height: 24px;
+.modal-form p {
+    width: 220px;
 }
 
 .modal-input {
@@ -2608,31 +2618,12 @@
     margin-top: 10px;
 }
 
-.modal-input::-webkit-input-placeholder {
-    font-size: 13px;
-    line-height: 24px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    color: var(--special-light-grey);
-    padding-left: 9px;
-    letter-spacing: 1px;
-}
-
-.modal-input::-moz-placeholder {
-    font-size: 13px;
-    line-height: 24px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    color: var(--special-light-grey);
-    padding-left: 9px;
-    letter-spacing: 1px;
-}
-
 .modal-input::placeholder {
     font-size: 13px;
     line-height: 24px;
     font-family: "PT Sans", "Arial", sans-serif;
     color: var(--special-light-grey);
     padding-left: 9px;
-    letter-spacing: 1px;
 }
 
 .comment {
@@ -2731,18 +2722,16 @@
     position: absolute;
     width: 66px;
     height: 66px;
-    top: 50px;
-    left: 70px;
+    top: 56px;
+    left: 80px;
     background: url(../img/icon-mark.svg);
 }
 
 
 .catalog-modal-title {
-    padding: 70px 99px;
-    padding-left: 170px;
-}
-
-.catalog-modal-title {
+    padding: 66px 99px;
+    padding-left: 176px;
+    padding-top: 75px;
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
@@ -2753,6 +2742,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    padding-left: 10px;
     width: 620px;
     min-height: 112px;
     background: #f1f1f1;
@@ -2767,21 +2758,35 @@
 }
 
 .catalog-ordering {
-    padding: 10px 46px;
+    width: 192px;
+    min-height: 38px;
+    padding: 5px 10px;
+    padding-top: 8px;
+    padding-left: 12px;
+    text-align: center;
     font-family: inherit;
     font-size: 14px;
     line-height: 18px;
+    text-transform: uppercase;
     background-color: var(--basic-red);
     color: var(--basic-white);
+    cursor: pointer;
 }
 
 .catalog-back {
-    padding: 10px 31px;
+    width: 192px;
+    min-height: 38px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    padding-top: 8px;
+    padding-left: 12px;
+    text-align: center;
     font-family: inherit;
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-black);
     background: var(--basic-white);
+    cursor: pointer;
 }
 
 /* !АНИМАЦИИ */
