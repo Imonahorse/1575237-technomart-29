@@ -1,23 +1,3 @@
-// !модальное окно каталога
-const under = document.querySelector(".card-buy-menu");
-const addToBasket = under.querySelector(".card-buy");
-const catalogModal = document.querySelector(".catalog-modal");
-const catalogModalClose = catalogModal.querySelector(".catalog-modal-close");
-const modalFirstButton = catalogModal.querySelector(".catalog-ordering")
-
-addToBasket.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  catalogModal.classList.add("modal-show");
-  modalFirstButton.focus();
-  console.log("клик один")
-});
-
-catalogModalClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  catalogModal.classList.remove("modal-show");
-});
-
-
 // !НИЖНИЙ СЛАЙДЕР
 
 const first = document.querySelector(".slider-delivery");
