@@ -321,7 +321,7 @@
 }
 
 .basket-link:active,
-.header-bookmark:active {
+.bookmark-link:active {
     background-color: var(--basic-light-black);
     color: var(--special-rgba);
 }
