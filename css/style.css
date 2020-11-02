@@ -809,7 +809,7 @@
 .offer-item-technics {
 
     background-color: var(--special-violet);
-    background-image: url(../img/traсtor.svg);
+    background-image: url(../img/tractor.svg);
     background-position: 190px;
 }
 
@@ -2246,12 +2246,17 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    padding-left: 36px;
+}
+
+.checkbox + label {
+    padding-left: 36px;
 }
 
 .checkbox + label::before {
     content: "";
     position: absolute;
-    left: -36px;
+    left: 1px;
     top: -3px;
     width: 23px;
     height: 23px;
@@ -2263,7 +2268,6 @@
 .checkbox + label:hover::before {
     border: 3px solid var(--special-dark--dark-gray);
 }
-
 
 .checkbox:focus + label::before {
     border: 3px solid var(--special-dark--dark-gray);
@@ -2286,8 +2290,8 @@
 }
 
 .radio:focus + label {
-    box-shadow: 0 0 0 2px var(--basic-black);
-    border-radius: 3px;
+    outline: 1px solid var(--basic-black);
+    outline-offset: 5px;
 }
 
 .filter-checkbox label {
@@ -2334,8 +2338,8 @@
 }
 
 .checkbox-list {
+    padding: 0;
     padding-top: 2px;
-    padding-left: 36px;
     margin-bottom: 46px;
 }
 
@@ -2346,7 +2350,7 @@
 .checkbox:checked + label::after {
     content: "";
     position: absolute;
-    left: -32px;
+    left: 4px;
     top: -3px;
     width: 25px;
     min-height: 20px;
@@ -2357,8 +2361,8 @@
 .radio + label::before {
     content: "";
     position: absolute;
-    left: -36px;
-    top: -2px;
+    left: -1px;
+    top: -1px;
     width: 25px;
     min-height: 25px;
     border-radius: 50%;
@@ -2368,7 +2372,7 @@
 .radio:checked + label::after {
     content: "";
     position: absolute;
-    left: -28px;
+    left: 7px;
     top: 6px;
     width: 9px;
     min-height: 9px;
@@ -2384,8 +2388,8 @@
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 15px;
     line-height: 19px;
-    padding-left: 36px;
     margin-bottom: 38px;
+    padding: 0;
 }
 
 .filter-option {
